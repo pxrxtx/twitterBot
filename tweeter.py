@@ -27,7 +27,8 @@ client_v2 = tweepy.Client(
     access_token_secret=secrets['access_token_secret']
 )
 
-randomPokemonID=random.randint(1,1017)
+# Selects a random number between 1 and the amount of pokemon currently in the pokedex
+randomPokemonID=random.randint(1,1025)
 
 r = requests.get('https://pokeapi.co/api/v2/pokemon/'+str(randomPokemonID))
 
